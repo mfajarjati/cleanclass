@@ -15,11 +15,19 @@ use App\Http\Controllers\TemplateController;
 */
  
 Route::get('/', function () {
-    return view('started/home');
+    return view('home');
 });
 
-Route::get('/how-to-use', function () {
-    return view('started/how-to-use');
+// Route::get('/how-to-work', function () {
+//     return view('started/');
+// });
+
+Route::get('/login-siswa', function () {
+    return view('login-siswa');
+});
+
+Route::get('/login-guru', function () {
+    return view('login-guru');
 });
 
 //route::get('/home', [TemplateController::class,'index']);

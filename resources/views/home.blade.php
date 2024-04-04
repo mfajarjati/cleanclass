@@ -13,6 +13,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Righteous&display=swap"
         rel="stylesheet">
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
     <title>CleanClass</title>
     <link rel="icon" href="assets/images/icon.ico">
@@ -54,7 +56,6 @@
                         <!-- ***** Logo Start ***** -->
                         <a href="#top" class="logo">
                             <img src="assets/images/logo.png" alt="" width="40" height="40">
-
                         </a>
                         <!-- ***** Logo End ***** -->
 
@@ -64,7 +65,6 @@
                             <li class="scroll-to-section"><a href="#how-to-work">How to Work</a></li>
                             <li class="scroll-to-section"><a href="#about">About</a></li>
                             <li class="scroll-to-section">
-                                <div class="border-first-button"><a href="#contact">Login</a></div>
                             </li>
                         </ul>
                         <a class='menu-trigger'>
@@ -82,21 +82,20 @@
     <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">
-                <div class="footer col-lg-12 ">
-                    <div class="row">
-                        <div class="col-lg-6 align-self-center">
+                <div class="footer col-lg-12">
+                    <div class="row align-items-center">
+                        <!-- Menggunakan align-items-center untuk memposisikan elemen di tengah -->
+                        <div class="col-lg-6">
                             <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s"
                                 data-wow-delay="1s">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <h2>Selamat Datang di CleanClass</h2>
+                                        <h2>Selamat Datang di <em>CleanClass</em></h2>
                                         <p>Sebuah platform website inovatif untuk meningkatkan kualitas kebersihan kelas
                                             dan mewujudkan lingkungan belajar yang bersih dan sehat!</p>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="border-first-button scroll-to-section">
-                                            <a href="#contact">Login</a>
-                                        </div>
+                                        <button class="modal__button" id="open-modal">
+                                            <a>Login</a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -111,6 +110,26 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal diluar dari baris -->
+    <section class="modal-container">
+        <div class="blur-background"></div>
+        <div class="modal__container" id="modal-container">
+            <div class="modal__content">
+                <div class="modal__close close-modal" title="Close">
+                    <i class='bx bx-x'></i>
+                </div>
+                <h1 class="modal__title">Login Sebagai?</h1>
+                <a href="/login-guru" class="modal__button2 modal__button-width">
+                    Guru
+                </a>
+                <a href="/login-siswa" class="modal__button2 modal__button-width">
+                    Siswa
+                </a>
+            </div>
+        </div>
+    </section>
+
     <hr class="mb-1" />
     <!-- ***** Main Area End ***** -->
 
@@ -220,10 +239,10 @@
                                 <a href="#" class="text-white">Home</a>
                             </li>
                             <li>
-                                <a href="#" class="text-white">How to Work</a>
+                                <a href="#how-to-work" class="text-white">How to Work</a>
                             </li>
                             <li>
-                                <a href="#" class="text-white">About</a>
+                                <a href="#about" class="text-white">About</a>
                             </li>
                         </ul>
                     </div>
@@ -299,6 +318,7 @@
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/popup.js"></script>
 
 </body>
 

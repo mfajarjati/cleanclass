@@ -366,33 +366,6 @@ intro
     color: #fff !important;
 }
 
-.demos {
-    padding-top: 60px;
-}
-
-.demo-item {
-    position: relative;
-    z-index: 2;
-}
-
-.demos img {
-    transition: all 0.5s;
-    border-radius: 23px;
-}
-
-.demos img:hover {
-    opacity: 1;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
-}
-
-.demos h4 {
-    text-align: center;
-    font-size: 20px;
-    margin-top: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
 /* 
 ---------------------------------------------
 header
@@ -556,7 +529,7 @@ header
 
 .header-area .main-nav .nav li:last-child {
     padding-right: 0px;
-    padding-left: 40px;
+    padding-left: 20px;
 }
 
 .header-area .main-nav .nav li:last-child a,
@@ -1054,6 +1027,14 @@ Banner Style
     overflow: hidden;
 }
 
+.main-banner em {
+    font-size: 70px;
+    font-weight: 700;
+    color: #50b0e0 !important;
+    z-index: 2;
+    font-style: normal;
+}
+
 .main-banner:after {
     content: "";
     background-image: url(../images/slider-left-dec.jpg);
@@ -1417,7 +1398,7 @@ footer {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 62px;
+    margin-top: 68px;
     padding-top: 100px;
 }
 
@@ -1620,5 +1601,152 @@ responsive
     }
     form#contact {
         padding: 30px;
+    }
+}
+
+.blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px); /* Menambahkan efek blur */
+    z-index: 9999; /* Pastikan lebih tinggi dari z-index modal */
+    display: none; /* Sembunyikan awalnya */
+}
+
+.modal__content {
+    height: 60vh;
+    display: grid;
+    place-items: center;
+    background-color: transparent;
+}
+
+.modal__button {
+    display: inline-block !important;
+    padding: 10px 50px !important;
+    color: #50b0e0;
+    border: 1px solid #50b0e0 !important;
+    border-radius: 15px;
+    font-weight: 500 !important;
+    letter-spacing: 0.9px !important;
+    transition: all 0.5s;
+    background-color: transparent;
+}
+
+.modal__button:hover {
+    background-color: #50b0e0;
+    color: #ffffff;
+}
+
+.modal__button2 {
+    display: inline-block !important;
+    padding: 20px 50px !important;
+    color: #191a20;
+    border: 1px solid #000000 !important;
+    border-radius: 15px;
+    font-weight: 500 !important;
+    letter-spacing: 0.9px !important;
+    transition: all 0.5s;
+    background-color: #fff;
+}
+
+.modal__button2:hover {
+    border: 1px solid #191a20 !important;
+    background-color: #191a20;
+    color: #ffffff;
+}
+
+.modal__container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Menggunakan rgba untuk warna dengan opacity */
+    border-radius: 10px;
+    padding: 20px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); Menambahkan shadow */
+    z-index: 10000;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.modal__content {
+    position: relative; /* ubah menjadi relative */
+    background-color: #50b0e0;
+    text-align: center;
+    padding: 3rem 2rem 2rem;
+    border-radius: 1rem;
+    transition: all 0.3s;
+    /* hapus transform: translateY(10%); */
+
+    /*=== Effect 2 ===*/
+    /* transform: scale(.5) translateY(10%); */
+
+    /*=== Effect 3 ===*/
+    /* transform: rotateX(65deg) scale(.75) translateY(10%);
+    transform-origin: 50% 100%; */
+}
+
+.modal__img {
+    width: 150px;
+    margin-bottom: 0.75rem;
+}
+
+.modal__close {
+    display: inline-flex;
+    background-color: #50b0e0;
+    border-radius: 0.25rem;
+    color: #fff;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.modal__title {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.modal__description {
+    color: floralwhite;
+}
+
+.modal__button-width {
+    width: 90%;
+}
+
+.modal__button-link {
+    display: block;
+    margin: 1rem auto 0;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Show modal */
+.show-modal {
+    visibility: visible;
+    opacity: 1;
+}
+
+.show-modal .modal__content {
+    /*=== Effect 1 ===*/
+    transform: translateY(0);
+}
+
+@media screen and (min-width: 576px) {
+    .modal__content {
+        margin: auto;
+        width: 580px;
+        border-radius: 1.25rem;
+    }
+
+    .modal__img {
+        width: 170px;
     }
 }
