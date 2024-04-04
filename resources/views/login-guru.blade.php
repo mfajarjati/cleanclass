@@ -70,7 +70,7 @@
             <img src="assets/images/started.png" alt="" class="form__img">
             <form action="" class="form__content">
                 <h1 class="form__title">Selamat Datang di <em>CleanClass</em></h1>
-                <p href="">Silahkan masukkan NIS dan Password Anda.</p>
+                <p href="">Silahkan masukkan NIP dan Password Anda.</p>
 
                 <div class="form__div form__div-one">
                     <div class="form__icon">
