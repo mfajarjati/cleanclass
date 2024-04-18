@@ -12,7 +12,7 @@ use App\Http\Controllers\TemplateController;
 | routes are loaded by the RouteServiceProvider and all of them will
 | be assigned to the "web" middleware group. Make something great!
 |
-*/
+*/ 
  
 Route::get('/', function () {
     return view('home');
@@ -28,6 +28,10 @@ Route::get('/login-siswa', function () {
 
 Route::get('/login-guru', function () {
     return view('login-guru');
+});
+
+Route::get('/home-siswa', function () {
+    return view('siswa/home-siswa');
 });
 
 //route::get('/home', [TemplateController::class,'index']);

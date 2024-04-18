@@ -94,18 +94,15 @@
                     </div>
                     <i class="fas fa-eye" id="show_eye"></i>
                     <i class="fas fa-eye-slash d-none" id="hide_eye"></i>
-
                 </div>
 
                 <div class="col-lg-12">
                     <div class="form_button">
-                        <a href="/contact">Login</a>
+                        <a href="/home-siswa">Login</a>
                     </div>
                 </div>
             </form>
-
         </div>
-
     </div>
 
     <!-- ===== MAIN JS ===== -->
