@@ -68,3 +68,60 @@ window.addEventListener("resize", function () {
         searchForm.classList.remove("show");
     }
 });
+
+document.getElementById("sidebar-home").addEventListener("click", function () {
+    // Hapus class 'active' dari semua link sidebar
+    var sidebarLinks = document.querySelectorAll("#sidebar ul.side-menu li");
+    sidebarLinks.forEach(function (link) {
+        link.classList.remove("active");
+    });
+
+    // Tambahkan class 'active' pada link yang diklik (link Home)
+    this.parentElement.classList.add("active");
+});
+
+// Tambahkan event listener untuk menangani klik pada link sidebar leaderboard
+document
+    .getElementById("sidebar-leaderboard")
+    .addEventListener("click", function () {
+        // Hapus class 'active' dari semua link sidebar
+        var sidebarLinks = document.querySelectorAll(
+            "#sidebar ul.side-menu li"
+        );
+        sidebarLinks.forEach(function (link) {
+            link.classList.remove("active");
+        });
+
+        // Tambahkan class 'active' pada link yang diklik (link leaderboard)
+        this.parentElement.classList.add("active");
+    });
+
+document
+    .getElementById("sidebar-laporan")
+    .addEventListener("click", function () {
+        // Hapus class 'active' dari semua link sidebar
+        var sidebarLinks = document.querySelectorAll(
+            "#sidebar ul.side-menu li"
+        );
+        sidebarLinks.forEach(function (link) {
+            link.classList.remove("active");
+        });
+
+        // Tambahkan class 'active' pada link yang diklik (link Home)
+        this.parentElement.classList.add("active");
+    });
+
+document
+    .getElementById("sidebar-jadwal")
+    .addEventListener("click", function () {
+        // Hapus class 'active' dari semua link sidebar
+        var sidebarLinks = document.querySelectorAll(
+            "#sidebar ul.side-menu li"
+        );
+        sidebarLinks.forEach(function (link) {
+            link.classList.remove("active");
+        });
+
+        // Tambahkan class 'active' pada link yang diklik (link Home)
+        this.parentElement.classList.add("active");
+    });

@@ -1,0 +1,109 @@
+#content main .table-data .leader .leader-list .btn-download {
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 36px;
+    background: var(--blue);
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#content main .table-data .leader {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin-bottom: 50px;
+}
+#content main .table-data .leader .leader-list {
+    width: 100%;
+}
+#content main .table-data .leader .leader-list li {
+    width: 100%;
+    margin-bottom: 16px;
+    border: 0.1px solid rgb(52, 46, 55, 10%);
+    border-radius: 10px;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+#content main .table-data .leader .leader-list li:hover {
+    width: 100%;
+    margin-bottom: 16px;
+    background: var(--grey);
+    border-radius: 10px;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#content main .table-data .leader .leader-list li.juara1 i img {
+    width: 45px;
+    height: 45px;
+}
+
+#content main .table-data .leader .leader-list li.juara2 i img {
+    width: 45px;
+    height: 45px;
+}
+
+#content main .table-data .leader .leader-list li.juara3 i img {
+    width: 45px;
+    height: 45px;
+}
+
+#content main .table-data .leader .leader-list li.juara i img {
+    width: 37px;
+    height: 37px;
+}
+
+#content main .table-data .leader .leader-list li.juara1 {
+    border-left: 10px solid #e7eb00;
+}
+#content main .table-data .leader .leader-list li.juara2 {
+    border-left: 10px solid #afafaf;
+}
+#content main .table-data .leader .leader-list li.juara3 {
+    border-left: 10px solid #bb8000;
+}
+
+#content main .table-data .leader .leader-list li.juara {
+    border-left: 10px solid #3c91e6;
+}
+
+#content main .table-data .leader .leader-list li.completed {
+    background: var(--blue);
+}
+#content main .table-data .leader .leader-list li:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 576px) {
+    #content nav form.show ~ .notification,
+    #content nav form.show ~ .profile {
+        display: none;
+    }
+
+    #content main .box-info {
+        grid-template-columns: 1fr;
+    }
+
+    #content main .table-data .head {
+        min-width: 420px;
+    }
+    #content main .table-data .order table {
+        min-width: 420px;
+    }
+    #content main .table-data .leader .leader-list {
+        min-width: 420px;
+    }
+    #sidebar .brand .text {
+        font-size: 20px;
+    }
+}

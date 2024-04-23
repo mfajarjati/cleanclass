@@ -15,7 +15,7 @@
                 <i class='bx bxs-user'></i>
                 <span class="text">
                     <h3>Wali Kelas</h3>
-                    <p>Wildan Tisna Surya M.T.</p>
+                    <p>Wildan Tisna Surya S.T.</p>
                 </span>
             </li>
             {{-- <li>
@@ -45,7 +45,7 @@
             <div class="order">
                 <div class="head">
                     <h3>Laporan</h3>
-                    <a href="#" class="btn-download">
+                    <a href="/laporan" class="btn-download">
                         <span class="text">See all</span>
                         <i class='bx bx-right-arrow-alt'></i>
                     </a>
@@ -110,28 +110,34 @@
             <div class="todo">
                 <div class="head">
                     <h3>Leaderboard</h3>
-                    <a href="#" class="btn-download">
+                    <a href="/leaderboard" class="btn-download">
                         <span class="text">See all</span>
                         <i class='bx bx-right-arrow-alt'></i>
                     </a>
                 </div>
                 <ul class="todo-list">
                     <li class="juara1">
-                        <i class="las la-trophy"></i>
+                        <i>
+                            <img src="assets/images/First.png" alt="">
+                        </i>
                         <p>Kelas 7B</p>
                         <a href="#" class="btn-download">
                             <span class="text">500 point</span>
                         </a>
                     </li>
                     <li class="juara2">
-                        <i class="las la-medal"></i>
+                        <i>
+                            <img src="assets/images/Second.png" alt="">
+                        </i>
                         <p>Kelas 8B</p>
                         <a href="#" class="btn-download">
                             <span class="text">480 point</span>
                         </a>
                     </li>
                     <li class="juara3">
-                        <i class="las la-award"></i>
+                        <i>
+                            <img src="assets/images/Third.png" alt="">
+                        </i>
                         <p>Kelas 9A</p>
                         <a href="#" class="btn-download">
                             <span class="text">460 point</span>

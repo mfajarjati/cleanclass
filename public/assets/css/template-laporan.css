@@ -1,0 +1,221 @@
+#content main .table-laporan .btn-download {
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 36px;
+    background: var(--blue);
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    font-weight: 500;
+}
+
+#content main .table-laporan .btn-download:hover {
+    color: var(--blue);
+    background: var(--light);
+    border: 2px solid var(--blue);
+}
+
+#content main .table-laporan .todo .todo-list .btn-download {
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 36px;
+    background: var(--blue);
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+#content main .table-laporan .order table tbody tr {
+    border-bottom: 0.1px solid rgb(52, 46, 55, 10%);
+    text-align: center;
+}
+
+#content main .table-laporan .order table tbody tr td p {
+    text-align: center;
+}
+
+#content main .table-laporan .order table thead tr th {
+    text-align: center;
+}
+
+#content main .table-laporan {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 24px;
+    margin-top: 24px;
+    width: 100%;
+    color: var(--dark);
+}
+
+#content main .table-laporan > div {
+    border-radius: 20px;
+    background: var(--light);
+    padding: 24px;
+    overflow-x: auto;
+}
+#content main .table-laporan .head {
+    display: flex;
+    align-items: center;
+    grid-gap: 16px;
+    margin-bottom: 24px;
+}
+
+#content main .table-laporan .head h3 {
+    margin-right: auto;
+    font-size: 24px;
+    font-weight: 600;
+}
+#content main .table-laporan .head .bx {
+    cursor: pointer;
+}
+
+#content main .table-laporan .order {
+    flex-grow: 1;
+    flex-basis: 500px;
+    margin-bottom: 50px;
+}
+#content main .table-laporan .order table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#content main .table-laporan .order table th {
+    padding-bottom: 12px;
+    font-size: 25px;
+    text-align: left;
+    border-bottom: 1px solid var(--grey);
+}
+#content main .table-laporan .order table td {
+    padding: 16px 0;
+}
+#content main .table-laporan .order table tr td:first-child {
+    display: flex;
+    align-items: center;
+    grid-gap: 12px;
+    padding-left: 6px;
+}
+#content main .table-laporan .order table td img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#content main .table-laporan .order table tbody tr:hover {
+    background: var(--grey);
+}
+#content main .table-laporan .order table tr td .status {
+    font-size: 10px;
+    padding: 6px 16px;
+    color: var(--light);
+    border-radius: 20px;
+    font-weight: 700;
+}
+#content main .table-laporan .order table tr td .status.completed {
+    background: var(--blue);
+}
+#content main .table-laporan .order table tr td .status.process {
+    background: var(--yellow);
+}
+#content main .table-laporan .order table tr td .status.pending {
+    background: var(--orange);
+}
+
+#content main .table-laporan .todo {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin-bottom: 30px;
+}
+#content main .table-laporan .todo .todo-list {
+    width: 100%;
+}
+#content main .table-laporan .todo .todo-list li {
+    width: 100%;
+    margin-bottom: 16px;
+    border: 0.1px solid rgb(52, 46, 55, 10%);
+    border-radius: 10px;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#content main .table-laporan .todo .todo-list li:hover {
+    width: 100%;
+    margin-bottom: 16px;
+    background: var(--grey);
+    border-radius: 10px;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#content main .table-laporan .todo .todo-list li.juara1 i img {
+    width: 45px;
+    height: 45px;
+}
+
+#content main .table-laporan .todo .todo-list li.juara2 i img {
+    width: 45px;
+    height: 45px;
+}
+
+#content main .table-laporan .todo .todo-list li.juara3 i img {
+    width: 45px;
+    height: 45px;
+}
+
+#content main .table-laporan .todo .todo-list li.juara i img {
+    width: 37px;
+    height: 37px;
+}
+
+#content main .table-laporan .todo .todo-list li.juara1 {
+    border-left: 10px solid #e7eb00;
+}
+#content main .table-laporan .todo .todo-list li.juara2 {
+    border-left: 10px solid #afafaf;
+}
+#content main .table-laporan .todo .todo-list li.juara3 {
+    border-left: 10px solid #bb8000;
+}
+
+#content main .table-laporan .todo .todo-list li.juara {
+    border-left: 10px solid #3c91e6;
+}
+
+#content main .table-laporan .todo .todo-list li.completed {
+    background: var(--blue);
+}
+#content main .table-laporan .todo .todo-list li:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 576px) {
+    #content nav form.show ~ .notification,
+    #content nav form.show ~ .profile {
+        display: none;
+    }
+
+    #content main .box-info {
+        grid-template-columns: 1fr;
+    }
+
+    #content main .table-laporan .head {
+        min-width: 420px;
+    }
+    #content main .table-laporan .order table {
+        min-width: 420px;
+    }
+    #content main .table-laporan .todo .todo-list {
+        min-width: 420px;
+    }
+    #sidebar .brand .text {
+        font-size: 20px;
+    }
+}

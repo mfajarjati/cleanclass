@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <!-- My CSS -->
@@ -15,15 +14,19 @@
     <link rel= "stylesheet"
         href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="assets/css/template-home.css">
+    <link rel="stylesheet" href="assets/css/template-laporan.css">
+    <link rel="stylesheet" href="assets/css/template-leaderboard.css">
+    <link rel="stylesheet" href="assets/css/template-jadwal.css">
+    <link rel="stylesheet" href="assets/css/template-event.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Righteous&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-
     <title>CleanClass</title>
     <link rel="icon" href="assets/images/icon.ico">
 </head>
+
 <!-- SIDEBAR -->
 <section id="sidebar">
     <a href="#" class="brand">
@@ -31,32 +34,32 @@
         <span class="text">CleanClass</span>
     </a>
     <ul class="side-menu top">
-        <li class="active">
-            <a href="#">
+        <li class="{{ Request::is('home-siswa') ? 'active' : '' }}">
+            <a href="/home-siswa" id="sidebar-home">
                 <i class='bx bxs-dashboard'></i>
                 <span class="text">Home</span>
             </a>
         </li>
-        <li>
-            <a href="#">
+        <li class="{{ Request::is('leaderboard') ? 'active' : '' }}">
+            <a href="/leaderboard" id="sidebar-leaderboard">
                 <i class='bx bx-trophy'></i>
                 <span class="text">Leaderboard</span>
             </a>
         </li>
-        <li>
-            <a href="#">
+        <li class="{{ Request::is('jadwal') ? 'active' : '' }}">
+            <a href="/jadwal" id="sidebar-jadwal">
                 <i class='bx bxs-calendar'></i>
                 <span class="text">Jadwal</span>
             </a>
         </li>
-        <li>
-            <a href="#">
+        <li class="{{ Request::is('event') ? 'active' : '' }}">
+            <a href="/event" id="sidebar-event">
                 <i class='bx bxs-calendar-event'></i>
-                <span class="text">Event</span>
+                <span class="text">Kegiatan</span>
             </a>
         </li>
-        <li>
-            <a href="#">
+        <li class="{{ Request::is('laporan') ? 'active' : '' }}">
+            <a href="/laporan" id="sidebar-laporan">
                 <i class='bx bxs-file'></i>
                 <span class="text">Laporan</span>
             </a>
@@ -64,7 +67,7 @@
     </ul>
     <ul class="side-menu">
         <li>
-            <a href="#" class="logout">
+            <a href="/login-siswa" class="logout">
                 <i class='bx bxs-log-out-circle'></i>
                 <span class="text">Logout</span>
             </a>
@@ -73,9 +76,7 @@
 </section>
 <!-- SIDEBAR -->
 
-
 <body>
-
     <!-- CONTENT -->
     <section id="content">
         <!-- NAVBAR -->
@@ -84,10 +85,6 @@
             <input type="checkbox" id="switch-mode" hidden>
 
             <div class="right-section">
-                {{-- <div class="notification">
-                    <i class='bx bxs-bell'></i>
-                    <span class="num">7</span>
-                </div> --}}
                 <div class="profile">
                     <div>
                         <h4>Firda Rosela Sundari</h4>
@@ -98,6 +95,10 @@
                     </a>
                 </div>
             </div>
+            {{-- <div class="notification">
+                <i class='bx bxs-bell'></i>
+                <span class="num">7</span>
+            </div> --}}
         </nav>
         <!-- NAVBAR -->
 
