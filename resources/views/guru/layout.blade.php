@@ -34,32 +34,32 @@
         <span class="text">CleanClass</span>
     </a>
     <ul class="side-menu top">
-        <li class="{{ Request::is('home-siswa') ? 'active' : '' }}">
-            <a href="/home-siswa" id="sidebar-home">
+        <li class="{{ Request::is('home-guru') ? 'active' : '' }}">
+            <a href="/home-guru" id="sidebar-guru">
                 <i class='bx bxs-dashboard'></i>
                 <span class="text">Home</span>
             </a>
         </li>
-        <li class="{{ Request::is('leaderboard') ? 'active' : '' }}">
-            <a href="/leaderboard" id="sidebar-leaderboard">
+        <li class="{{ Request::is('leaderboard-guru') ? 'active' : '' }}">
+            <a href="/leaderboard-guru" id="sidebar-leaderboard-guru">
                 <i class='bx bx-trophy'></i>
                 <span class="text">Leaderboard</span>
             </a>
         </li>
-        <li class="{{ Request::is('jadwal') ? 'active' : '' }}">
-            <a href="/jadwal" id="sidebar-jadwal">
+        <li class="{{ Request::is('jadwal-guru') ? 'active' : '' }}">
+            <a href="/jadwal-guru" id="sidebar-jadwal-guru">
                 <i class='bx bxs-calendar'></i>
                 <span class="text">Jadwal</span>
             </a>
         </li>
-        <li class="{{ Request::is('event') ? 'active' : '' }}">
-            <a href="/event" id="sidebar-event">
+        <li class="{{ Request::is('event-guru') ? 'active' : '' }}">
+            <a href="/event-guru" id="sidebar-event-guru">
                 <i class='bx bxs-calendar-event'></i>
                 <span class="text">Kegiatan</span>
             </a>
         </li>
-        <li class="{{ Request::is('laporan') ? 'active' : '' }}">
-            <a href="/laporan" id="sidebar-laporan">
+        <li class="{{ Request::is('laporan-guru') ? 'active' : '' }}">
+            <a href="/laporan-guru" id="sidebar-laporan-guru">
                 <i class='bx bxs-file'></i>
                 <span class="text">Laporan</span>
             </a>
@@ -87,11 +87,11 @@
             <div class="right-section">
                 <div class="profile">
                     <div>
-                        <h4>Firda Rosela Sundari</h4>
-                        <p>Kelas 7B</p>
+                        <h4>Wildan Tisna Surya S.T.</h4>
+                        <p>NIP. 194925455791200399</p>
                     </div>
-                    <a href="#">
-                        <img src="assets/images/student.png">
+                    <a>
+                        <img src="assets/images/teacher.png">
                     </a>
                 </div>
             </div>

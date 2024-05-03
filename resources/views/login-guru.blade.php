@@ -99,7 +99,7 @@
 
                 <div class="col-lg-12">
                     <div class="form_button">
-                        <a href="#contact">Login</a>
+                        <a href="/home-guru">Login</a>
                     </div>
                 </div>
             </form>

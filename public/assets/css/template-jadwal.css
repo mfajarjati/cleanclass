@@ -83,7 +83,7 @@ ul {
 .pricing .monthly-price {
     display: flex;
     padding: 0 30px;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     flex-shrink: 0;
     transition: all 0.5s ease;
@@ -112,8 +112,111 @@ ul {
     padding-bottom: 30px;
 }
 
+.radio-input input[type="radio"] {
+    display: none;
+}
+
+.radio-input input[type="radio"] + label span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.radio-input input[type="radio"] + label span svg {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.radio-input input[type="checkbox"] {
+    display: none;
+}
+
+.radio-input input[type="checkbox"] + label span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.radio-input input[type="checkbox"] + label span svg {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.radio-input input[type="radio"][id$="_color-1"] + label span,
+.radio-input input[type="radio"][id$="_color-2"] + label span {
+    background-color: #eee;
+    border: 2px solid #dbd8e3;
+    margin-right: 10px;
+}
+
+.radio-input input[type="radio"][id$="_color-2"]:checked + label span {
+    background-color: #fc3c5c; /* Warna saat dipilih */
+}
+
+.radio-input input[type="radio"][id$="_color-1"]:checked + label span {
+    background-color: var(--blue); /* Warna saat dipilih */
+}
+
+.radio-input input[type="radio"]:checked + label span svg {
+    opacity: 1;
+}
+
+.radio-input input[type="checkbox"]:checked + label span svg {
+    opacity: 1;
+}
+
+.monthly-features .btn-submit {
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 36px;
+    background: var(--blue);
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    width: 8vw;
+    margin-left: auto;
+    z-index: 200;
+}
+
+.monthly-features .btn-submit.clicked {
+    background-color: #ccc !important;
+}
+
+.monthly-features .submit-button.clicked {
+    background-color: #ccc !important;
+}
+
+.pricing .pricing-table-body2 {
+    padding: 0 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
 .pricing .pricing-table-body ul li {
     text-align: center;
+    font-weight: 300;
+    color: #000000;
+    margin-bottom: 15px;
+    position: relative;
+    border-bottom: 0.1px solid rgb(52, 46, 55, 10%);
+    padding-bottom: 10px;
+}
+
+.pricing .pricing-table-body2 ul li {
+    display: flex;
+    justify-content: space-between;
     font-weight: 300;
     color: #000000;
     margin-bottom: 15px;
@@ -148,8 +251,7 @@ ul {
     width: 20px;
     background-color: #bbbbbb;
     color: #ffffff;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     border-radius: 50%;
     font-size: 13px;
     position: absolute;

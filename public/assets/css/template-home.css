@@ -90,7 +90,6 @@ body {
     overflow-x: hidden;
     scrollbar-width: none;
     border: none;
-    animation: slideInLeft 1s ease;
 }
 #sidebar::--webkit-scrollbar {
     display: none;
@@ -237,6 +236,9 @@ body {
     left: 280px;
     transition: 0.3s ease;
     overflow-y: auto;
+}
+
+#content main {
     animation: fadeIn 1s ease;
 }
 #sidebar.hide ~ #content {
@@ -274,7 +276,6 @@ body {
     left: 0;
     z-index: 1000;
     justify-content: space-between;
-    animation: slideInDown 1s ease;
 }
 
 #content nav .bx {
@@ -356,7 +357,8 @@ body {
     width: 36px;
     height: 36px;
     object-fit: cover;
-    border-radius: 50%;
+
+    transform: scale(1.2);
 }
 
 #content nav .right-section .notification {
@@ -487,6 +489,10 @@ body {
     font-weight: 500;
 }
 
+#content main .table-data {
+    padding-bottom: 20px;
+}
+
 #content main .table-data .btn-download:hover {
     color: var(--blue);
     background: var(--light);
@@ -507,17 +513,30 @@ body {
     font-size: 12px;
 }
 
-#content main .table-data .order table tbody tr {
-    border-bottom: 0.1px solid rgb(52, 46, 55, 10%);
-    text-align: center;
+#content main .table-data .btn-laporan {
+    padding: 5px 20px;
+    border-radius: 36px;
+    background: var(--blue);
+    color: var(--light);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    font-weight: 500;
+    font-size: 13px;
 }
 
-#content main .table-data .order table tbody tr td p {
-    text-align: center;
-}
-
-#content main .table-data .order table thead tr th {
-    text-align: center;
+#content main .table-data .todo .todo-list .btn-laporan {
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 36px;
+    background: var(--blue);
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    font-weight: 500;
+    font-size: 12px;
 }
 
 #content main .box-info {
@@ -619,27 +638,32 @@ body {
 #content main .table-data .order {
     flex-grow: 1;
     flex-basis: 500px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 #content main .table-data .order table {
     width: 100%;
     border-collapse: collapse;
 }
-#content main .table-data .order table th {
-    padding-bottom: 12px;
-    font-size: 13px;
-    text-align: left;
-    border-bottom: 1px solid var(--grey);
-}
+
 #content main .table-data .order table td {
     padding: 16px 0;
 }
-#content main .table-data .order table tr td:first-child {
+
+#content main .table-data .order table tbody tr {
+    border-bottom: 0.1px solid rgb(52, 46, 55, 10%);
+    text-align: left;
+}
+
+#content main .table-data .order table tbody tr td:first-child {
     display: flex;
     align-items: center;
-    grid-gap: 12px;
-    padding-left: 6px;
 }
+
+#content main .table-data .order table tbody tr td:last-child {
+    border-bottom: 0.1px solid rgb(52, 46, 55, 10%);
+    text-align: center;
+}
+
 #content main .table-data .order table td img {
     width: 36px;
     height: 36px;

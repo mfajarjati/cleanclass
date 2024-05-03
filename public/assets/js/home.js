@@ -1,35 +1,40 @@
-const switchMode = document.getElementById("switch-mode");
-const sunIcon = document.querySelector(
-    ".switch-mode ion-icon[name='sunny-outline']"
-);
-const moonIcon = document.querySelector(
-    ".switch-mode ion-icon[name='moon-outline']"
-);
-
-switchMode.addEventListener("change", function () {
-    if (this.checked) {
-        document.body.classList.add("dark");
-        sunIcon.style.display = "none";
-        moonIcon.style.display = "inline";
-    } else {
-        document.body.classList.remove("dark");
-        sunIcon.style.display = "inline";
-        moonIcon.style.display = "none";
+function eventClick() {
+    var confirmation = confirm("Apakah Anda yakin?");
+    if (confirmation) {
+        const button = document.querySelector(".btn-download3");
+        button.classList.add("clicked");
+        button.querySelector(".text").textContent = "Sudah mengikuti";
+        button.disabled = true;
     }
-});
+}
 
-const allSideMenu = document.querySelectorAll("#sidebar .side-menu.top li a");
+function confirmSubmit(submitButtonId) {
+    // Minta konfirmasi dari pengguna
+    var confirmation = confirm("Apakah Anda yakin?");
 
-allSideMenu.forEach((item) => {
-    const li = item.parentElement;
+    // Jika pengguna menekan OK pada konfirmasi
+    if (confirmation) {
+        // Mengambil tombol submit yang bersangkutan
+        const submitButton = document.getElementById(submitButtonId);
 
-    item.addEventListener("click", function () {
-        allSideMenu.forEach((i) => {
-            i.parentElement.classList.remove("active");
+        // Mengambil parent dari tombol submit
+        const pricingTable = submitButton.closest(".pricing-table");
+
+        // Mengambil radio di dalam parent pricingTable
+        const radios = pricingTable.querySelectorAll('input[type="radio"]');
+
+        // Menonaktifkan radio di dalam parent pricingTable
+        radios.forEach(function (radio) {
+            radio.disabled = true;
         });
-        li.classList.add("active");
-    });
-});
+
+        // Mengubah tampilan tombol submit
+        submitButton.querySelector(".text").textContent = "Sudah submit";
+        submitButton.classList.add("clicked");
+        submitButton.disabled = true;
+    }
+    return confirmation;
+}
 
 // TOGGLE SIDEBAR
 const menuBar = document.querySelector("#content nav .bx.bx-menu");
@@ -39,37 +44,23 @@ menuBar.addEventListener("click", function () {
     sidebar.classList.toggle("hide");
 });
 
-const searchButton = document.querySelector("#content nav");
-const searchButtonIcon = document.querySelector("#content nav .bx");
-const searchForm = document.querySelector("#content nav form");
-
-searchButton.addEventListener("click", function (e) {
-    if (window.innerWidth < 576) {
-        e.preventDefault();
-        searchForm.classList.toggle("show");
-        if (searchForm.classList.contains("show")) {
-            searchButtonIcon.classList.replace("bx-search", "bx-x");
-        } else {
-            searchButtonIcon.classList.replace("bx-x", "bx-search");
-        }
-    }
-});
-
 if (window.innerWidth < 768) {
     sidebar.classList.add("hide");
-} else if (window.innerWidth > 576) {
-    searchButtonIcon.classList.replace("bx-x", "bx-search");
-    searchForm.classList.remove("show");
 }
 
-window.addEventListener("resize", function () {
-    if (this.innerWidth > 576) {
-        searchButtonIcon.classList.replace("bx-x", "bx-search");
-        searchForm.classList.remove("show");
-    }
+// sidebar
+document.getElementById("sidebar-home").addEventListener("click", function () {
+    // Hapus class 'active' dari semua link sidebar
+    var sidebarLinks = document.querySelectorAll("#sidebar ul.side-menu li");
+    sidebarLinks.forEach(function (link) {
+        link.classList.remove("active");
+    });
+
+    // Tambahkan class 'active' pada link yang diklik (link Home)
+    this.parentElement.classList.add("active");
 });
 
-document.getElementById("sidebar-home").addEventListener("click", function () {
+document.getElementById("sidebar-guru").addEventListener("click", function () {
     // Hapus class 'active' dari semua link sidebar
     var sidebarLinks = document.querySelectorAll("#sidebar ul.side-menu li");
     sidebarLinks.forEach(function (link) {
@@ -83,6 +74,21 @@ document.getElementById("sidebar-home").addEventListener("click", function () {
 // Tambahkan event listener untuk menangani klik pada link sidebar leaderboard
 document
     .getElementById("sidebar-leaderboard")
+    .addEventListener("click", function () {
+        // Hapus class 'active' dari semua link sidebar
+        var sidebarLinks = document.querySelectorAll(
+            "#sidebar ul.side-menu li"
+        );
+        sidebarLinks.forEach(function (link) {
+            link.classList.remove("active");
+        });
+
+        // Tambahkan class 'active' pada link yang diklik (link leaderboard)
+        this.parentElement.classList.add("active");
+    });
+
+document
+    .getElementById("sidebar-leaderboard-guru")
     .addEventListener("click", function () {
         // Hapus class 'active' dari semua link sidebar
         var sidebarLinks = document.querySelectorAll(
@@ -112,7 +118,63 @@ document
     });
 
 document
+    .getElementById("sidebar-laporan-guru")
+    .addEventListener("click", function () {
+        // Hapus class 'active' dari semua link sidebar
+        var sidebarLinks = document.querySelectorAll(
+            "#sidebar ul.side-menu li"
+        );
+        sidebarLinks.forEach(function (link) {
+            link.classList.remove("active");
+        });
+
+        // Tambahkan class 'active' pada link yang diklik (link Home)
+        this.parentElement.classList.add("active");
+    });
+
+document
     .getElementById("sidebar-jadwal")
+    .addEventListener("click", function () {
+        // Hapus class 'active' dari semua link sidebar
+        var sidebarLinks = document.querySelectorAll(
+            "#sidebar ul.side-menu li"
+        );
+        sidebarLinks.forEach(function (link) {
+            link.classList.remove("active");
+        });
+
+        // Tambahkan class 'active' pada link yang diklik (link Home)
+        this.parentElement.classList.add("active");
+    });
+
+document
+    .getElementById("sidebar-jadwal-guru")
+    .addEventListener("click", function () {
+        // Hapus class 'active' dari semua link sidebar
+        var sidebarLinks = document.querySelectorAll(
+            "#sidebar ul.side-menu li"
+        );
+        sidebarLinks.forEach(function (link) {
+            link.classList.remove("active");
+        });
+
+        // Tambahkan class 'active' pada link yang diklik (link Home)
+        this.parentElement.classList.add("active");
+    });
+
+document.getElementById("sidebar-event").addEventListener("click", function () {
+    // Hapus class 'active' dari semua link sidebar
+    var sidebarLinks = document.querySelectorAll("#sidebar ul.side-menu li");
+    sidebarLinks.forEach(function (link) {
+        link.classList.remove("active");
+    });
+
+    // Tambahkan class 'active' pada link yang diklik (link Home)
+    this.parentElement.classList.add("active");
+});
+
+document
+    .getElementById("sidebar-event-guru")
     .addEventListener("click", function () {
         // Hapus class 'active' dari semua link sidebar
         var sidebarLinks = document.querySelectorAll(

@@ -14,16 +14,15 @@ use App\Http\Controllers\TemplateController;
 |
 */
 
+// route awalan/started
 Route::get('/', function () {
     return view('home');
 });
 
+
+// route user siswa
 Route::get('/login-siswa', function () {
     return view('login-siswa');
-});
-
-Route::get('/login-guru', function () {
-    return view('login-guru');
 });
 
 Route::get('/home-siswa', function () {
@@ -45,4 +44,31 @@ Route::get('/jadwal', function () {
 Route::get('/event', function () {
     return view('siswa/event');
 });
+
+
+// route user guru
+Route::get('/login-guru', function () {
+    return view('login-guru');
+});
+
+Route::get('/home-guru', function () {
+    return view('guru/home-guru');
+});
+
+Route::get('/leaderboard-guru', function () {
+    return view('guru/leaderboard-guru');
+});
+
+Route::get('/jadwal-guru', function () {
+    return view('guru/jadwal-guru');
+});
+
+Route::get('/event-guru', function () {
+    return view('guru/event-guru');
+});
+
+Route::get('/laporan-guru', function () {
+    return view('guru/laporan-guru');
+}); 
+
 //route::get('/home', [TemplateController::class,'index']);

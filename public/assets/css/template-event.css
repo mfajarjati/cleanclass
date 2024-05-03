@@ -26,6 +26,10 @@
     --color-4: #11d65d;
     --color-5: #ef3fd7;
 }
+.event-table-body {
+    display: flex;
+    flex-direction: column;
+}
 
 .event-table-body .btn-download {
     height: 36px;
@@ -63,6 +67,29 @@
 
 .event-table-body .btn-download2 .text {
     font-size: 12px;
+}
+
+.event-table-body .btn-download3 {
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 36px;
+    background: var(--color-4);
+    color: var(--light);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    font-weight: 500;
+    width: auto;
+    margin-bottom: 20px;
+}
+
+.event-table-body .btn-download3 .text {
+    font-size: 12px;
+}
+
+.event-table-body .btn-download3.clicked {
+    background: #ccc !important; /* Warna abu-terang */
 }
 
 .event .switch-table .text-monthly,
@@ -245,6 +272,10 @@
         width: auto;
         font-size: 12px;
     }
+    .event .event-table-body .btn-download3 {
+        width: auto;
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -260,6 +291,12 @@
         width: auto;
         font-size: 10px;
     }
+
+    .event .event-table-body .btn-download3 {
+        width: auto;
+        font-size: 10px;
+    }
+
     .event .event-table-header img {
         height: 15vh;
         width: auto;
@@ -310,6 +347,10 @@
     }
 
     .event .event-table-body .btn-download2 {
+        width: auto;
+        font-size: 9px;
+    }
+    .event .event-table-body .btn-download3 {
         width: auto;
         font-size: 9px;
     }

@@ -73,6 +73,7 @@
 }
 #content main .table-laporan .head .bx {
     cursor: pointer;
+    color: #3c91e6;
 }
 
 #content main .table-laporan .order {
@@ -94,7 +95,6 @@
     padding: 16px 0;
 }
 #content main .table-laporan .order table tr td:first-child {
-    display: flex;
     align-items: center;
     grid-gap: 12px;
     padding-left: 6px;
@@ -142,6 +142,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#content main .table-laporan .btn-laporan {
+    padding: 5px 20px;
+    border-radius: 36px;
+    background: var(--blue);
+    color: var(--light);
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 13px;
 }
 
 #content main .table-laporan .todo .todo-list li:hover {
