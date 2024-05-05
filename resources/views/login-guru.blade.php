@@ -20,41 +20,20 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
 
-    {{-- <title>CleanClass</title>
-    <link rel="icon" href="assets/images/icon.ico"> --}}
-
-    <!-- Bootstrap core CSS -->
+    <!-- Icon and Name -->
     <title>CleanClass</title>
     <link rel="icon" href="assets/images/icon.ico">
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="">
     <!-- ===== BOX ICONS ===== -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha384-gqqflRCy6cJhpzLAc45h5zkNzdpc+ra04+GmyU8dVtNVYuhO4fukn7D/5lxMC8OV" crossorigin="anonymous">
+
+    <!-- Additional CSS Files -->
     <link rel="stylesheet" href="assets/css/template-login.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    {{-- <link rel="stylesheet" href="assets/css/template-started.css"> --}}
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
-
 </head>
 
 <body>
-    <!-- ***** Preloader Start ***** -->
-    <div id="js-preloader" class="js-preloader">
-        <div class="preloader-inner">
-            <span class="dot"></span>
-            <div class="dots">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-    <!-- ***** Preloader End ***** -->
-
     <div class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
         <a href="/" class='back-arrow'>
             <i class='bx bx-arrow-back'></i>
@@ -94,7 +73,6 @@
                     </div>
                     <i class="fas fa-eye" id="show_eye"></i>
                     <i class="fas fa-eye-slash d-none" id="hide_eye"></i>
-
                 </div>
 
                 <div class="col-lg-12">
@@ -103,9 +81,7 @@
                     </div>
                 </div>
             </form>
-
         </div>
-
     </div>
 
     <!-- ===== MAIN JS ===== -->

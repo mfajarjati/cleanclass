@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+
+    {{-- font balsamiq --}}
     <link
         href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Righteous&display=swap"
         rel="stylesheet">
-    <!--=============== BOXICONS ===============-->
+
+    {{-- boxicons --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
+    {{-- name and icon website --}}
     <title>CleanClass</title>
     <link rel="icon" href="assets/images/icon.ico">
 
@@ -23,10 +23,6 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Additional CSS Files -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha384-gqqflRCy6cJhpzLAc45h5zkNzdpc+ra04+GmyU8dVtNVYuhO4fukn7D/5lxMC8OV" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/template-started.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
@@ -34,7 +30,7 @@
 
 <body>
 
-    <!-- ***** Preloader Start ***** -->
+    <!--  Preloader Start -->
     <div id="js-preloader" class="js-preloader">
         <div class="preloader-inner">
             <span class="dot"></span>
@@ -54,8 +50,8 @@
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="#top" class="logo">
-                            <img src="assets/images/logo.png" alt="" width="40" height="40">
+                        <a href="/" class="logo">
+                            <img src="assets/images/logo.png" alt="">
                         </a>
                         <!-- ***** Logo End ***** -->
 
@@ -78,13 +74,12 @@
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <!-- ***** Main Area Start ***** -->
-    <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
         <div class="container">
             <div class="row">
                 <div class="footer col-lg-12">
                     <div class="row align-items-center">
-                        <!-- Menggunakan align-items-center untuk memposisikan elemen di tengah -->
                         <div class="col-lg-6">
                             <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s"
                                 data-wow-delay="1s">
@@ -93,7 +88,7 @@
                                         <h2>Selamat Datang di <em>CleanClass</em></h2>
                                         <p>Sebuah platform website inovatif untuk meningkatkan kualitas kebersihan kelas
                                             dan mewujudkan lingkungan belajar yang bersih dan sehat!</p>
-                                        <button class="modal__button" id="open-modal">
+                                        <button class="button__login" id="open-modal">
                                             <a>Login</a>
                                         </button>
                                     </div>
@@ -110,8 +105,9 @@
             </div>
         </div>
     </div>
+    <!-- ***** Welcome Area SEnd ***** -->
 
-    <!-- Modal diluar dari baris -->
+    <!-- Modal option guru and siswa Start-->
     <section class="modal-container">
         <div class="blur-background"></div>
         <div class="modal__container" id="modal-container">
@@ -129,16 +125,15 @@
             </div>
         </div>
     </section>
-
     <hr class="mb-1" />
-    <!-- ***** Main Area End ***** -->
+    <!-- Modal option guru and siswa End-->
 
     <!-- ***** How to work Area Start ***** -->
-    <div id="how-to-work" class="services section">
+    <div id="how-to-work" class="how-to-work section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="section-heading wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="text-how-to-work wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
                         <h4>How <em>CleanClass</em> Work?</h4>
                         <div class="line-dec"></div>
                         <br>
@@ -146,7 +141,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="service-item show-up header-text wow fadeInLeft" data-wow-duration="1s"
+                    <div class="how-to-work-item show-up header-text wow fadeInLeft" data-wow-duration="1s"
                         data-wow-delay="0.5s">
                         <i class="fas"> <img src="assets/images/Signing.png" alt=""></i>
                         <h4>Proses Masuk</h4>
@@ -154,7 +149,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="service-item show-up header-text wow fadeInRight" data-wow-duration="1s"
+                    <div class="how-to-work-item show-up header-text wow fadeInRight" data-wow-duration="1s"
                         data-wow-delay="0.5s">
                         <i class="fas"> <img src="assets/images/Agenda.png" alt=""></i>
                         <h4>Penjadwalan Piket</h4>
@@ -162,7 +157,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="service-item show-up header-text wow fadeInLeft" data-wow-duration="1s"
+                    <div class="how-to-work-item show-up header-text wow fadeInLeft" data-wow-duration="1s"
                         data-wow-delay="0.5s">
                         <i class="fas"> <img src="assets/images/Approval.png" alt=""></i>
                         <h4>Persetujuan</h4>
@@ -170,16 +165,15 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="service-item show-up header-text wow fadeInRight" data-wow-duration="1s"
+                    <div class="how-to-work-item show-up header-text wow fadeInRight" data-wow-duration="1s"
                         data-wow-delay="0.5s">
                         <i class="fas"> <img src="assets/images/popular.png" alt=""></i>
                         <h4>Perhitungan Point</h4>
-                        <p>Setiap kali siswa hadir pada piket, mereka mendapatkan poin dari wali kelasnya dan point akan
-                            dijumlahkan untuk tiap kelas.</p>
+                        <p>Setiap kali siswa hadir pada piket, mereka mendapatkan poin dari wali kelasnya.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="service-item show-up header-text wow fadeInLeft" data-wow-duration="1s"
+                    <div class="how-to-work-item show-up header-text wow fadeInLeft" data-wow-duration="1s"
                         data-wow-delay="1s">
                         <i class="fas"> <img src="assets/images/Leaderboard.png" alt=""></i>
                         <h4>Pengelolaan Leaderboard</h4>
@@ -187,7 +181,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="service-item show-up header-text wow fadeInRight" data-wow-duration="1s"
+                    <div class="how-to-work-item show-up header-text wow fadeInRight" data-wow-duration="1s"
                         data-wow-delay="1s">
                         <i class="fas"> <img src="assets/images/Report.png" alt=""></i>
                         <h4>Pemantauan dan Pelaporan</h4>
@@ -197,24 +191,18 @@
             </div>
         </div>
     </div>
-
     <!-- ***** How to work Area End ***** -->
 
     <!-- ***** About Area Start ***** -->
     <footer id="about" class="text-center text-lg-start text-white" style="background-color: #50b0e0">
-        <!-- Grid container -->
         <div class="p-4 pb-0">
-            <!-- Section: Links -->
             <section>
-                <!--Grid row-->
                 <div class="row wow fadeInUp">
-                    <!--Grid column 1-->
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <div class="right-image wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                             <img src="assets/images/cleanclasslogo.png" alt="">
                         </div>
                     </div>
-                    <!--Grid column 2-->
                     <div class="col-lg-4 mb-4 mb-lg-0">
                         <div class="created-by">
                             <h5 class="text-black fw-bold">Created by</h5>
@@ -231,7 +219,6 @@
                             </ul>
                         </div>
                     </div>
-                    <!--Grid column 3-->
                     <div class="col-lg-4">
                         <h5 class="text-black fw-bold">Section</h5>
                         <ul class="list-unstyled mb-0">
@@ -247,14 +234,10 @@
                         </ul>
                     </div>
                 </div>
-                <!--Grid row-->
             </section>
-            <!-- Section: Links -->
         </div>
         <br>
-        <!-- Grid container -->
 
-        <!-- Additional row -->
         <div class="container">
             <div class="row wow fadeInUp">
                 <div class="col-lg-6 mx-auto">
@@ -294,7 +277,7 @@
                         </li>
                         <li>
                             <a href="mailto:kampus_cibiru@upi.edu" class="text-white"><i
-                                    class="fas fa-envelope  text-black"></i>
+                                    class="fas fa-envelope text-black"></i>
                                 kampus_upicibiru@upi.edu</a>
                         </li>
                     </ul>
@@ -302,7 +285,6 @@
 
             </div>
         </div>
-        <!-- End additional row -->
 
         <!-- Copyright -->
         <div class="bawah text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
@@ -319,7 +301,6 @@
     <script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/popup.js"></script>
-
 </body>
 
 </html>
