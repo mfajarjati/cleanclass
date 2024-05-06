@@ -1,4 +1,5 @@
-#content main .table-data .leader .leader-list .btn-download {
+/* point-point tiap kelasnya */
+#content main .table-data .leader .leader-list .btn-leader {
     height: 36px;
     padding: 0 16px;
     border-radius: 36px;
@@ -12,11 +13,14 @@
     font-size: 18px;
 }
 
+/* tabel */
 #content main .table-data .leader {
     flex-grow: 1;
     flex-basis: 300px;
     margin-bottom: 50px;
 }
+
+/* list isi table */
 #content main .table-data .leader .leader-list {
     width: 100%;
 }
@@ -43,6 +47,7 @@
     align-items: center;
 }
 
+/* image per juara */
 #content main .table-data .leader .leader-list li.juara1 i img {
     width: 45px;
     height: 45px;
@@ -63,6 +68,7 @@
     height: 37px;
 }
 
+/* warna per list juara */
 #content main .table-data .leader .leader-list li.juara1 {
     border-left: 10px solid #e7eb00;
 }
@@ -77,33 +83,12 @@
     border-left: 10px solid #3c91e6;
 }
 
-#content main .table-data .leader .leader-list li.completed {
-    background: var(--blue);
-}
-#content main .table-data .leader .leader-list li:last-child {
-    margin-bottom: 0;
-}
-
+/* responsive */
 @media screen and (max-width: 576px) {
-    #content nav form.show ~ .notification,
-    #content nav form.show ~ .profile {
-        display: none;
-    }
-
-    #content main .box-info {
-        grid-template-columns: 1fr;
-    }
-
     #content main .table-data .head {
-        min-width: 420px;
-    }
-    #content main .table-data .order table {
         min-width: 420px;
     }
     #content main .table-data .leader .leader-list {
         min-width: 420px;
-    }
-    #sidebar .brand .text {
-        font-size: 20px;
     }
 }

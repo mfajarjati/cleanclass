@@ -10,8 +10,10 @@
 
         </div>
         <div class="table-laporan">
-            <div class="order">
+            <div class="laporan">
                 <table>
+
+                    {{-- header baris --}}
                     <thead>
                         <tr>
                             <th>NIS</th>
@@ -20,6 +22,8 @@
                         </tr>
                     </thead>
                     <tbody>
+
+                        {{-- list nama-nama siswa --}}
                         <tr>
                             <td>
                                 <p>2373927734</p>
@@ -34,6 +38,8 @@
                                 </a>
                             </td>
                         </tr>
+
+                        {{-- list nama-nama siswa --}}
                         <tr>
                             <td>
                                 <p>2369430584</p>
@@ -48,6 +54,8 @@
                                 </a>
                             </td>
                         </tr>
+
+                        {{-- list nama-nama siswa --}}
                         <tr>
                             <td>
                                 <p>2382437699</p>
@@ -63,6 +71,7 @@
                             </td>
                         </tr>
 
+                        {{-- list nama-nama siswa --}}
                         <tr>
                             <td>
                                 <p>2384498434</p>
@@ -78,6 +87,7 @@
                             </td>
                         </tr>
 
+                        {{-- list nama-nama siswa --}}
                         <tr>
                             <td>
                                 <p>2342057333</p>

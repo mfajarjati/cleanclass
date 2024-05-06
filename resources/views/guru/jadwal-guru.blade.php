@@ -8,22 +8,26 @@
             <h3>Jadwal <em>Piket</em></h3>
             <img src="assets/images/award.png" alt="">
         </div>
-        <section class="pricing">
+        <section class="jadwal">
             <div class="container">
-                <div class="pricing-main">
+                <div class="jadwal-main">
                     <div class="row">
 
-                        <!-- basic table start -->
-                        <div class="pricing-table style-1">
-                            <div class="pricing-table-header">
+
+                        {{-- nama yang piket senin --}}
+                        <div class="jadwal-piket style-1">
+                            <div class="piket-table-header">
                                 <h3>Senin</h3>
                             </div>
-                            <div class="pricing-table-body2">
-                                <ul class="monthly-features">
-                                    {{-- nama yang piket senin --}}
+                            <div class="piket-hari-guru">
+                                <ul class="piket">
+
+                                    {{-- anggota 1 senin --}}
                                     <li>
                                         <label for="senin">Alambana Habibi</label>
                                         <div class="radio-input">
+
+                                            {{-- hadir piket --}}
                                             <input checked="" value="piket" name="Alambana Habibi"
                                                 id="Alambana Habibi_color-1" type="radio">
                                             <label for="Alambana Habibi_color-1">
@@ -45,6 +49,7 @@
                                                 </span>
                                             </label>
 
+                                            {{-- tidak hadir piket --}}
                                             <input value="tidak" name="Alambana Habibi" id="Alambana Habibi_color-2"
                                                 type="radio">
                                             <label for="Alambana Habibi_color-2">
@@ -65,10 +70,13 @@
                                                 </span>
                                             </label>
                                         </div>
-
                                     </li>
+
+                                    {{-- anggota 2 senin --}}
                                     <li><label for="senin">Almira Mandasari</label>
                                         <div class="radio-input">
+
+                                            {{-- hadir piket --}}
                                             <input checked="" value="piket" name="Almira Mandasari"
                                                 id="Almira Mandasari_color-1" type="radio">
                                             <label for="Almira Mandasari_color-1">
@@ -90,6 +98,7 @@
                                                 </span>
                                             </label>
 
+                                            {{-- tidak hadir piket --}}
                                             <input value="tidak" name="Almira Mandasari" id="Almira Mandasari_color-2"
                                                 type="radio">
                                             <label for="Almira Mandasari_color-2">
@@ -111,6 +120,8 @@
                                             </label>
                                         </div>
                                     </li>
+
+
                                     <li><label for="senin">Anggabaya Santoso</label>
                                         <div class="radio-input">
                                             <input checked="" value="piket" name="Anggabaya Santoso"
@@ -156,6 +167,8 @@
                                             </label>
                                         </div>
                                     </li>
+
+
                                     <li><label for="senin">Bakianto Agustina</label>
                                         <div class="radio-input">
                                             <input checked="" value="piket" name="Bakianto Agustina"
@@ -253,15 +266,15 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- basic table end -->
 
-                        <!-- standard table start -->
-                        <div class="pricing-table style-2">
-                            <div class="pricing-table-header">
+
+                        {{-- nama yang piket selasa --}}
+                        <div class="jadwal-piket style-2">
+                            <div class="piket-table-header">
                                 <h3>Selasa</h3>
                             </div>
-                            <div class="pricing-table-body2">
-                                <ul class="monthly-features">
+                            <div class="piket-hari-guru">
+                                <ul class="piket">
                                     <li><label for="">Dalimin Wastuti</label>
                                         <div class="radio-input">
                                             <input checked="" value="piket" name="Dalimin Wastuti"
@@ -490,15 +503,15 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- standard table end -->
 
-                        <!-- premium table start -->
-                        <div class="pricing-table style-3">
-                            <div class="pricing-table-header">
+
+                        {{-- nama yang piket rabu --}}
+                        <div class="jadwal-piket style-3">
+                            <div class="piket-table-header">
                                 <h3>Rabu</h3>
                             </div>
-                            <div class="pricing-table-body2">
-                                <ul class="monthly-features">
+                            <div class="piket-hari-guru">
+                                <ul class="piket">
                                     <li>Firda Rosela Sundari
                                         <div class="radio-input">
                                             <input checked="" value="piket" name="Firda Rosela Sundari"
@@ -731,15 +744,15 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- premium table end -->
 
-                        <!-- premium table start -->
-                        <div class="pricing-table style-4">
-                            <div class="pricing-table-header">
+
+                        {{-- nama yang piket kamis --}}
+                        <div class="jadwal-piket style-4">
+                            <div class="piket-table-header">
                                 <h3>Kamis</h3>
                             </div>
-                            <div class="pricing-table-body2">
-                                <ul class="monthly-features">
+                            <div class="piket-hari-guru">
+                                <ul class="piket">
                                     <li>Makuta Suryatmi
                                         <div class="radio-input">
                                             <input checked="" value="piket" name="Makuta Suryatmi"
@@ -972,15 +985,15 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- premium table end -->
 
-                        <!-- premium table start -->
-                        <div class="pricing-table style-5">
-                            <div class="pricing-table-header">
+
+                        {{-- nama yang piket jumat --}}
+                        <div class="jadwal-piket style-5">
+                            <div class="piket-table-header">
                                 <h3>Jum'at</h3>
                             </div>
-                            <div class="pricing-table-body2">
-                                <ul class="monthly-features">
+                            <div class="piket-hari-guru">
+                                <ul class="piket">
                                     <li>Qori Maheswara
                                         <div class="radio-input">
                                             <input checked="" value="piket" name="Qori Maheswara"
@@ -1207,13 +1220,13 @@
                                         </div>
                                     </li>
                                     <button class="btn-submit" onclick="return confirmSubmit('btn-submit-jumat');"
-                                    id="btn-submit-jumat">
-                                    <span class="text">Submit</span>
-                                </button>
+                                        id="btn-submit-jumat">
+                                        <span class="text">Submit</span>
+                                    </button>
                                 </ul>
                             </div>
                         </div>
-                        <!-- premium table end -->
+
 
                     </div>
                 </div>

@@ -1,5 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+/* All */
 
+body {
+    font-family: var(--balsamiq);
+}
 * {
     box-sizing: border-box;
     margin: 0;
@@ -18,7 +21,7 @@ ul {
     flex-wrap: wrap;
     padding-bottom: 20px;
 }
-.pricing {
+.jadwal {
     min-height: 100vh;
     padding: 10px 0;
     --color-1: #5b58e8;
@@ -28,15 +31,8 @@ ul {
     --color-5: #ef3fd7;
 }
 
-.pricing .switch-table .text-monthly,
-.pricing .switch-table .text-yearly {
-    color: #ffffff;
-    text-transform: capitalize;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.pricing .pricing-table {
+/* tabel jadwal piket */
+.jadwal .jadwal-piket {
     background-color: #ffffff;
     width: calc((100% / 3) - 30px);
     margin: 0 15px;
@@ -44,74 +40,75 @@ ul {
     overflow: hidden;
     margin: 0 auto 20px;
 }
-.pricing .pricing-table-header {
+
+/* tabel jadwal piket header */
+.jadwal .piket-table-header {
     padding: 15px 30px;
 }
 
-.pricing .style-1 .pricing-table-header {
+.jadwal .style-1 .piket-table-header {
     background-color: var(--color-1);
 }
 
-.pricing .style-2 .pricing-table-header {
+.jadwal .style-2 .piket-table-header {
     background-color: var(--color-2);
 }
 
-.pricing .style-3 .pricing-table-header {
+.jadwal .style-3 .piket-table-header {
     background-color: var(--color-3);
 }
 
-.pricing .style-4 .pricing-table-header {
+.jadwal .style-4 .piket-table-header {
     background-color: var(--color-4);
 }
 
-.pricing .style-5 .pricing-table-header {
+.jadwal .style-5 .piket-table-header {
     background-color: var(--color-5);
 }
 
-.pricing .pricing-table-header h3 {
+.jadwal .piket-table-header h3 {
     font-size: 30px;
     color: #ffffff;
     text-transform: capitalize;
     font-weight: 600;
     text-align: center;
 }
-.pricing .pricing-table-price {
-    padding: 40px 0;
-    display: flex;
-}
-.pricing .yearly-price,
-.pricing .monthly-price {
-    display: flex;
-    padding: 0 30px;
-    justify-content: space-between;
-    width: 100%;
-    flex-shrink: 0;
-    transition: all 0.5s ease;
-}
-.pricing .pricing-main.active .yearly-price,
-.pricing .pricing-main.active .monthly-price {
-    transform: translateX(-100%);
-}
 
-.pricing .pricing-table-price .currency {
-    font-size: 25px;
-    color: #555555;
-    font-weight: 700;
-    line-height: 1;
-}
-.pricing .pricing-table-price .amount {
-    font-size: 85px;
-    color: #555555;
-    font-weight: 700;
-    line-height: 0.8;
-}
-
-.pricing .pricing-table-body {
+/* isi tabel jadwal piket siswa*/
+.jadwal .piket-hari-siswa {
     padding: 0 30px;
     padding-top: 20px;
     padding-bottom: 30px;
 }
 
+.jadwal .piket-hari-siswa ul li:last-child {
+    margin-bottom: 0;
+}
+.jadwal .piket-hari-siswa ul li i {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    background-color: #bbbbbb;
+    color: #ffffff;
+    justify-content: space-between;
+    border-radius: 50%;
+    font-size: 13px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.jadwal .piket-hari-siswa ul li {
+    text-align: center;
+    font-weight: 300;
+    color: #000000;
+    margin-bottom: 15px;
+    position: relative;
+    border-bottom: 0.1px solid rgb(52, 46, 55, 10%);
+    padding-bottom: 10px;
+}
+
+/* guru - radio pemilihan piket/tidak */
 .radio-input input[type="radio"] {
     display: none;
 }
@@ -131,49 +128,29 @@ ul {
     transition: all 0.3s ease;
 }
 
-.radio-input input[type="checkbox"] {
-    display: none;
-}
-
-.radio-input input[type="checkbox"] + label span {
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 2px solid #ffffff;
-}
-
-.radio-input input[type="checkbox"] + label span svg {
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
 .radio-input input[type="radio"][id$="_color-1"] + label span,
 .radio-input input[type="radio"][id$="_color-2"] + label span {
     background-color: #eee;
-    border: 2px solid #dbd8e3;
+    border: 2px solid #342e37;
     margin-right: 10px;
 }
 
+/* warna radio kalau tidak piket */
 .radio-input input[type="radio"][id$="_color-2"]:checked + label span {
-    background-color: #fc3c5c; /* Warna saat dipilih */
+    background-color: #fc3c5c;
 }
 
+/* warna radio kalau tidak piket */
 .radio-input input[type="radio"][id$="_color-1"]:checked + label span {
-    background-color: var(--blue); /* Warna saat dipilih */
+    background-color: var(--blue);
 }
 
 .radio-input input[type="radio"]:checked + label span svg {
     opacity: 1;
 }
 
-.radio-input input[type="checkbox"]:checked + label span svg {
-    opacity: 1;
-}
-
-.monthly-features .btn-submit {
+/* button submit */
+.piket .btn-submit {
     height: 36px;
     padding: 0 16px;
     border-radius: 36px;
@@ -190,31 +167,18 @@ ul {
     z-index: 200;
 }
 
-.monthly-features .btn-submit.clicked {
+.piket .btn-submit.clicked {
     background-color: #ccc !important;
 }
 
-.monthly-features .submit-button.clicked {
-    background-color: #ccc !important;
-}
-
-.pricing .pricing-table-body2 {
+/* isi piket tabel guru */
+.jadwal .piket-hari-guru {
     padding: 0 30px;
     padding-top: 20px;
     padding-bottom: 30px;
 }
 
-.pricing .pricing-table-body ul li {
-    text-align: center;
-    font-weight: 300;
-    color: #000000;
-    margin-bottom: 15px;
-    position: relative;
-    border-bottom: 0.1px solid rgb(52, 46, 55, 10%);
-    padding-bottom: 10px;
-}
-
-.pricing .pricing-table-body2 ul li {
+.jadwal .piket-hari-guru ul li {
     display: flex;
     justify-content: space-between;
     font-weight: 300;
@@ -223,67 +187,21 @@ ul {
     position: relative;
     border-bottom: 0.1px solid rgb(52, 46, 55, 10%);
     padding-bottom: 10px;
-}
-
-.pricing .monthly-features,
-.pricing .yearly-features {
-    display: none;
-}
-.pricing .pricing-main:not(.active) .monthly-features,
-.pricing .pricing-main.active .yearly-features {
-    display: block;
-    animation: fadeIn 0.5s ease forwards;
-}
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-.pricing .pricing-table-body ul li:last-child {
-    margin-bottom: 0;
-}
-.pricing .pricing-table-body ul li i {
-    display: flex;
-    height: 20px;
-    width: 20px;
-    background-color: #bbbbbb;
-    color: #ffffff;
-    justify-content: space-between;
-    border-radius: 50%;
-    font-size: 13px;
-    position: absolute;
-    left: 0;
-    top: 3px;
-}
-.pricing .pricing-table-footer {
-    padding: 30px;
-    text-align: center;
-}
-.pricing .pricing-table-footer a {
-    display: inline-block;
-    padding: 12px 35px;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: box-shadow 0.3s ease;
-}
-.pricing .pricing-table-footer a:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
 /*responsive*/
 @media (max-width: 991px) {
-    .pricing .pricing-table {
+    .jadwal .jadwal-piket {
         width: calc(50% - 30px);
         margin-bottom: 30px;
     }
 }
 @media (max-width: 767px) {
-    .pricing .pricing-table {
+    .jadwal .jadwal-piket {
         width: calc(100% - 30px);
+    }
+
+    .piket .btn-submit {
+        width: 80px;
     }
 }

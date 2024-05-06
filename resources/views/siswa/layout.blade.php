@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
@@ -29,7 +31,7 @@
 
 <!-- SIDEBAR -->
 <section id="sidebar">
-    <a href="#" class="brand">
+    <a class="brand">
         <img src="assets/images/started.png" alt="">
         <span class="text">CleanClass</span>
     </a>
@@ -90,7 +92,7 @@
                         <h4>Firda Rosela Sundari</h4>
                         <p>Kelas 7B</p>
                     </div>
-                    <a href="#">
+                    <a>
                         <img src="assets/images/student.png">
                     </a>
                 </div>

@@ -3,13 +3,6 @@
 @section('content')
     <!-- MAIN -->
     <main>
-        {{-- <div class="head-title">
-            <div class="left">
-                <h1>Over<em>view</em></h1>
-                </ul>
-            </div>
-        </div> --}}
-
         <ul class="box-info">
             <li>
                 <i class='bx bxs-user'></i>
@@ -18,13 +11,6 @@
                     <p>Wildan Tisna Surya S.T.</p>
                 </span>
             </li>
-            {{-- <li>
-                <i class='bx bxs-door-open'></i>
-                <span class="text">
-                    <h3>Kelas</h3>
-                    <p>7B</p>
-                </span>
-            </li> --}}
             <li>
                 <i class='bx bxs-medal'></i>
                 <span class="text">
@@ -42,10 +28,10 @@
         </ul>
 
         <div class="table-data">
-            <div class="order">
+            <div class="laporan-home">
                 <div class="head">
                     <h3>Laporan</h3>
-                    <a href="/laporan" class="btn-download">
+                    <a href="/laporan" class="btn-see-all">
                         <span class="text">See all</span>
                         <i class='bx bx-right-arrow-alt'></i>
                     </a>
@@ -66,7 +52,7 @@
                             <td>
                                 <i class='bx bxs-check-circle'></i>
                             </td>
-                            <td><span class="status completed">Piket</span></td>
+                            <td><span class="status piket">Piket</span></td>
                         </tr>
                         <tr>
                             <td>
@@ -75,7 +61,7 @@
                             <td>
                                 <i class='bx bxs-x-circle'></i>
                             </td>
-                            <td><span class="status pending">Tidak Piket</span></td>
+                            <td><span class="status tidak piket">Tidak Piket</span></td>
                         </tr>
                         <tr>
                             <td>
@@ -84,7 +70,7 @@
                             <td>
                                 <i class='bx bxs-check-circle'></i>
                             </td>
-                            <td><span class="status completed">Piket</span></td>
+                            <td><span class="status piket">Piket</span></td>
                         </tr>
                         <tr>
                             <td>
@@ -93,7 +79,7 @@
                             <td>
                                 <i class='bx bxs-check-circle'></i>
                             </td>
-                            <td><span class="status completed">Piket</span></td>
+                            <td><span class="status piket">Piket</span></td>
                         </tr>
                         <tr>
                             <td>
@@ -102,26 +88,26 @@
                             <td>
                                 <i class='bx bxs-check-circle'></i>
                             </td>
-                            <td><span class="status completed">Piket</span></td>
+                            <td><span class="status piket">Piket</span></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <div class="todo">
+            <div class="leaderboard-home">
                 <div class="head">
                     <h3>Leaderboard</h3>
-                    <a href="/leaderboard" class="btn-download">
+                    <a href="/leaderboard" class="btn-see-all">
                         <span class="text">See all</span>
                         <i class='bx bx-right-arrow-alt'></i>
                     </a>
                 </div>
-                <ul class="todo-list">
+                <ul class="leaderboard-list">
                     <li class="juara1">
                         <i>
                             <img src="assets/images/First.png" alt="">
                         </i>
                         <p>Kelas 7B</p>
-                        <a href="#" class="btn-download">
+                        <a class="btn-leaderboard">
                             <span class="text">500 point</span>
                         </a>
                     </li>
@@ -130,7 +116,7 @@
                             <img src="assets/images/Second.png" alt="">
                         </i>
                         <p>Kelas 8B</p>
-                        <a href="#" class="btn-download">
+                        <a class="btn-leaderboard">
                             <span class="text">480 point</span>
                         </a>
                     </li>
@@ -139,7 +125,7 @@
                             <img src="assets/images/Third.png" alt="">
                         </i>
                         <p>Kelas 9A</p>
-                        <a href="#" class="btn-download">
+                        <a class="btn-leaderboard">
                             <span class="text">460 point</span>
                         </a>
                     </li>

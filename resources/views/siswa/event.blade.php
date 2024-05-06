@@ -13,14 +13,18 @@
                 <div class="event-main">
                     <div class="row">
 
-                        <!-- basic table start -->
-                        <div href="#" class="event-table style-1">
+                        {{-- Event --}}
+                        <div class="event-table style-1">
+
+                            {{-- Gambar --}}
                             <div class="event-table-header">
                                 <img src="assets/images/bersihsekolah.png" alt="">
                             </div>
-                            {{-- judul kegiatan --}}
 
+                            {{-- judul kegiatan --}}
                             <h3>Pentingnya Menjaga Kebersihan Sekolah</h3>
+
+                            {{-- isi --}}
                             <div class="event-table-body">
                                 <p>
                                     Kebersihan di sekolah penting untuk kesehatan dan kenyamanan. Siswa dan staf harus
@@ -28,20 +32,19 @@
                                     diperlukan untuk mencegah penyakit. Dengan lingkungan yang bersih, kita melindungi
                                     kesehatan siswa dan menciptakan lingkungan belajar yang kondusif.
                                 </p>
-                                <div class="btn-download2">
+
+                                {{-- Waktu --}}
+                                <div class="btn-event">
                                     <span class="text">Waktu : 22 April 2024</span>
                                 </div>
                             </div>
                         </div>
-                        <!-- basic table end -->
 
-                        <!-- basic table start -->
-                        <div href="#" class="event-table style-1">
+
+                        <div class="event-table style-1">
                             <div class="event-table-header">
                                 <img src="assets/images/kebersihankelas.jpg" alt="">
                             </div>
-                            {{-- judul kegiatan --}}
-
                             <h3>Wujudkan Kebersihan Kelas yang Sehat</h3>
                             <div class="event-table-body">
                                 <p>
@@ -50,20 +53,17 @@
                                     belajar bersih, kita ciptakan lingkungan nyaman dan sehat. Mari bergandengan tangan
                                     menjaga kebersihan untuk pembelajaran yang lebih baik dan lebih menyenangkan bagi semua!
                                 </p>
-                                <div class="btn-download2">
+                                <div class="btn-event">
                                     <span class="text">Waktu : 24 April 2024</span>
                                 </div>
                             </div>
                         </div>
-                        <!-- basic table end -->
 
-                        <!-- basic table start -->
-                        <div href="#" class="event-table style-1">
+
+                        <div class="event-table style-1">
                             <div class="event-table-header">
                                 <img src="assets/images/sampah.jpg" alt="">
                             </div>
-                            {{-- judul kegiatan --}}
-
                             <h3>Kreasi Mengubah Limbah menjadi Karya</h3>
                             <div class="event-table-body">
                                 <p>
@@ -72,13 +72,11 @@
                                     Mulailah dengan mengumpulkan sampah dan berkreasi. Bersama, kita bisa mengurangi limbah
                                     dan menciptakan dunia yang lebih berkelanjutan!
                                 </p>
-                                <div class="btn-download2">
+                                <div class="btn-event">
                                     <span class="text">Waktu : 26 April 2024</span>
                                 </div>
                             </div>
                         </div>
-                        <!-- basic table end -->
-
 
                     </div>
                 </div>

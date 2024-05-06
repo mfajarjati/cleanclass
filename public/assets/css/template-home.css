@@ -1,31 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap");
-@import "animated.css";
-
-.js-preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #fff;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    opacity: 1;
-    visibility: visible;
-    z-index: 9999;
-    -webkit-transition: opacity 0.25s ease;
-    transition: opacity 0.25s ease;
-}
-
-.js-preloader.loaded {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
+/* 
+---------------------------------------------
+ALL
+--------------------------------------------- 
+*/
 
 * {
     margin: 0;
@@ -42,9 +19,7 @@ li {
 }
 
 :root {
-    --poppins: "Balsamiq Sans", sans-serif;
-    --lato: "Balsamiq Sans", sans-serif;
-
+    --balsamiq: "Balsamiq Sans", sans-serif;
     --light: #f9f9f9;
     --blue: #3c91e6;
     --light-blue: #cfe8ff;
@@ -65,18 +40,17 @@ html {
     overflow-y: hidden;
 }
 
-body.dark {
-    --light: #0c0c1e;
-    --grey: #060714;
-    --dark: #fbfbfb;
-}
-
 body {
     background: var(--grey);
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-/* SIDEBAR */
+/* 
+---------------------------------------------
+Sidebar
+--------------------------------------------- 
+*/
 #sidebar {
     position: fixed;
     top: 0;
@@ -85,20 +59,18 @@ body {
     height: 100%;
     background: var(--blue);
     z-index: 2000;
-    font-family: var(--lato);
+    font-family: var(--balsamiq);
     transition: 0.3s ease;
     overflow-x: hidden;
     scrollbar-width: none;
     border: none;
 }
-#sidebar::--webkit-scrollbar {
-    display: none;
-    border: none;
-}
+
 #sidebar.hide {
     width: 60px;
     border: none;
 }
+
 #sidebar .brand {
     font-size: 24px;
     font-weight: 700;
@@ -117,10 +89,12 @@ body {
     margin-top: 18px;
 }
 
+/* teks cleanclass samping gambar diujung */
 #sidebar .brand .text {
     font-size: 35px;
 }
 
+/* image icon ujung home */
 #sidebar .brand img {
     margin-left: 7px;
     margin-right: 10px;
@@ -128,12 +102,7 @@ body {
     height: 50px;
 }
 
-#sidebar .brand .bx {
-    min-width: 60px;
-    display: flex;
-    justify-content: center;
-    border: none;
-}
+/* menu samping */
 #sidebar .side-menu {
     width: 100%;
     margin-top: 48px;
@@ -166,15 +135,6 @@ body {
     border: none;
 }
 
-#sidebar img {
-    width: 40px;
-    height: 40px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    border: none;
-}
-
 #sidebar .side-menu li.active::after {
     content: "";
     position: absolute;
@@ -204,10 +164,19 @@ body {
     color: var(--blue);
     border: none;
 }
+
 #sidebar.hide .side-menu li a {
     width: calc(48px - (4px * 2));
     transition: width 0.3s ease;
 }
+
+#sidebar .side-menu li a .bx {
+    min-width: calc(60px - ((4px + 6px) * 2));
+    display: flex;
+    justify-content: center;
+}
+
+/* logout */
 #sidebar .side-menu li a.logout {
     color: var(--red);
     background-color: var(--light);
@@ -222,14 +191,12 @@ body {
     color: var(--blue);
     background-color: var(--light);
 }
-#sidebar .side-menu li a .bx {
-    min-width: calc(60px - ((4px + 6px) * 2));
-    display: flex;
-    justify-content: center;
-}
-/* SIDEBAR */
 
-/* CONTENT */
+/* 
+---------------------------------------------
+Content
+--------------------------------------------- 
+*/
 #content {
     position: relative;
     width: calc(100% - 280px);
@@ -246,31 +213,36 @@ body {
     left: 60px;
 }
 
-#content main .head h3 {
-    font-size: 50px;
-}
-
+/* content tulisan tiap judul per menu*/
 #content main .head {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#content main .head img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    margin-left: 10px;
+#content main .head h3 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-/* NAVBAR */
+#content main .head h3 em {
+    font-size: 50px;
+    font-style: normal;
+    margin-bottom: 20px;
+    color: #50b0e0;
+    text-align: center;
+}
+
+/* NAVBAR ATAS*/
 #content nav {
     height: 80px;
     background: var(--light);
     padding: 0 24px;
     display: flex;
     align-items: center;
-    font-family: var(--lato);
+    font-family: var(--balsamiq);
     position: sticky;
     top: 0;
     left: 0;
@@ -278,22 +250,17 @@ body {
     justify-content: space-between;
 }
 
+/* navbar icon */
 #content nav .bx {
     font-size: 30px;
-    color: #060714;
+    color: var(--dark);
 }
 
 #content nav .bx:hover {
     font-size: 30px;
-    color: #060714;
+    color: var(--dark);
     box-shadow: 0 0 10px 10px rgba(6, 7, 20, 0.123);
     border-radius: 50%;
-}
-
-#content nav h4,
-#content nav p {
-    margin: 0;
-    color: var(--dark);
 }
 
 #content nav::before {
@@ -307,30 +274,12 @@ body {
     box-shadow: -20px -20px 0 var(--light);
 }
 
-#content nav a {
-    color: var(--dark);
-}
-
 #content nav .bx.bx-menu {
     cursor: pointer;
     color: var(--dark);
 }
 
-#content nav .nav-link {
-    font-size: 16px;
-    transition: 0.3s ease;
-}
-
-#content nav .nav-link:hover {
-    color: var(--blue);
-}
-
-#content nav form {
-    max-width: 400px;
-    width: 100%;
-    margin-right: auto;
-}
-
+/* profile, nama, gambar */
 #content nav .right-section .profile {
     display: flex;
     align-items: center;
@@ -357,27 +306,10 @@ body {
     width: 36px;
     height: 36px;
     object-fit: cover;
-
     transform: scale(1.2);
 }
 
-#content nav .right-section .notification {
-    position: absolute;
-    top: 6px;
-    right: -6px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 2px solid var(--light);
-    background: var(--red);
-    color: var(--light);
-    font-weight: 700;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/* switch sidebar */
 #content nav .switch-mode {
     display: block;
     min-width: 50px;
@@ -403,13 +335,12 @@ body {
 #content nav #switch-mode:checked + .switch-mode::before {
     left: calc(100% - (25px - 4px) - 2px);
 }
-
 /* NAVBAR */
 
 /* MAIN */
 #content main {
     #content main .box-info li:hover {
-        background-color: #fff;
+        background-color: var(--light);
         background: var(--grey);
         padding: 24px;
         border-radius: 20px;
@@ -419,51 +350,12 @@ body {
     }
     width: 100%;
     padding: 36px 24px;
-    font-family: var(--poppins);
+    font-family: var(--balsamiq);
     max-height: calc(100vh - 56px);
 }
 
-#content main .head-title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    grid-gap: 16px;
-    flex-wrap: wrap;
-}
-
-#content main .head-title .left h1 {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: var(--dark);
-}
-
-#content main .head-title .left h1 em {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: #50b0e0;
-    font-style: normal;
-}
-
-#content main .head-title .left .breadcrumb {
-    display: flex;
-    align-items: center;
-    grid-gap: 16px;
-}
-#content main .head-title .left .breadcrumb li {
-    color: var(--dark);
-}
-#content main .head-title .left .breadcrumb li a {
-    color: var(--dark-grey);
-    pointer-events: none;
-}
-#content main .head-title .left .breadcrumb li a.active {
-    color: var(--blue);
-    pointer-events: unset;
-}
-
-#content main .head-title .btn-download {
+/* button see all */
+#content main .table-data .btn-see-all {
     height: 36px;
     padding: 0 16px;
     border-radius: 36px;
@@ -474,71 +366,15 @@ body {
     align-items: center;
     grid-gap: 10px;
     font-weight: 500;
-}
-
-#content main .table-data .btn-download {
-    height: 36px;
-    padding: 0 16px;
-    border-radius: 36px;
-    background: var(--blue);
-    color: var(--light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 10px;
-    font-weight: 500;
-}
-
-#content main .table-data {
-    padding-bottom: 20px;
-}
-
-#content main .table-data .btn-download:hover {
-    color: var(--blue);
-    background: var(--light);
     border: 2px solid var(--blue);
 }
 
-#content main .table-data .todo .todo-list .btn-download {
-    height: 36px;
-    padding: 0 16px;
-    border-radius: 36px;
-    background: var(--blue);
-    color: var(--light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 10px;
-    font-weight: 500;
-    font-size: 12px;
+#content main .table-data .btn-see-all:hover {
+    transition: 0.3s ease;
+    padding: 0 20px;
 }
 
-#content main .table-data .btn-laporan {
-    padding: 5px 20px;
-    border-radius: 36px;
-    background: var(--blue);
-    color: var(--light);
-    justify-content: center;
-    align-items: center;
-    grid-gap: 10px;
-    font-weight: 500;
-    font-size: 13px;
-}
-
-#content main .table-data .todo .todo-list .btn-laporan {
-    height: 36px;
-    padding: 0 16px;
-    border-radius: 36px;
-    background: var(--blue);
-    color: var(--light);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-gap: 10px;
-    font-weight: 500;
-    font-size: 12px;
-}
-
+/* 3 kotak-kotak atas */
 #content main .box-info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -579,6 +415,8 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* icon warna warni di kotak kotak */
 #content main .box-info li:nth-child(1) .bx {
     background: var(--light-blue);
     color: var(--blue);
@@ -592,11 +430,7 @@ body {
     color: var(--orange);
 }
 
-#content main .box-info li:nth-child(4) .bx {
-    background: var(--light-green);
-    color: var(--green);
-}
-
+/* isi kotak kotak */
 #content main .box-info li .text h3 {
     font-size: 24px;
     font-weight: 600;
@@ -606,6 +440,7 @@ body {
     color: var(--dark);
 }
 
+/* table-table*/
 #content main .table-data {
     display: flex;
     flex-wrap: wrap;
@@ -613,13 +448,46 @@ body {
     margin-top: 24px;
     width: 100%;
     color: var(--dark);
+    padding-bottom: 20px;
 }
+
+/* point pada table leaderboard dan laporan */
+#content main .table-data .leaderboard-home .leaderboard-list .btn-leaderboard {
+    height: 36px;
+    padding: 0 16px;
+    border-radius: 36px;
+    background: var(--blue);
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/* guru - point pada table laporan */
+#content main .table-data .btn-laporan {
+    padding: 5px 20px;
+    border-radius: 36px;
+    background: var(--blue);
+    color: var(--light);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* table */
 #content main .table-data > div {
     border-radius: 20px;
     background: var(--light);
     padding: 24px;
     overflow-x: auto;
 }
+
+/* table title*/
 #content main .table-data .head {
     display: flex;
     align-items: center;
@@ -635,70 +503,66 @@ body {
     cursor: pointer;
 }
 
-#content main .table-data .order {
+/* table laporan */
+#content main .table-data .laporan-home {
     flex-grow: 1;
     flex-basis: 500px;
     margin-bottom: 25px;
 }
-#content main .table-data .order table {
+#content main .table-data .laporan-home table {
     width: 100%;
     border-collapse: collapse;
 }
 
-#content main .table-data .order table td {
-    padding: 16px 0;
-}
-
-#content main .table-data .order table tbody tr {
-    border-bottom: 0.1px solid rgb(52, 46, 55, 10%);
-    text-align: left;
-}
-
-#content main .table-data .order table tbody tr td:first-child {
-    display: flex;
-    align-items: center;
-}
-
-#content main .table-data .order table tbody tr td:last-child {
+/* isi table laporan */
+#content main .table-data .laporan-home table tbody tr {
     border-bottom: 0.1px solid rgb(52, 46, 55, 10%);
     text-align: center;
 }
-
-#content main .table-data .order table td img {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    object-fit: cover;
+#content main .table-data .laporan-home table td {
+    padding: 16px 0;
 }
-#content main .table-data .order table tbody tr:hover {
+
+/* mengatur posisi baris paling atas */
+#content main .table-data .laporan-home th {
+    text-align: center;
+}
+
+/* merata-kanan isi table laporan pada kolom pertama */
+#content main .table-data .laporan-home table tbody tr td:first-child {
+    display: flex;
+}
+
+#content main .table-data .laporan-home table tbody tr:hover {
     background: var(--grey);
 }
-#content main .table-data .order table tr td .status {
+
+/* siswa - status piket/tidak pada laporan */
+#content main .table-data .laporan-home table tr td .status {
     font-size: 10px;
     padding: 6px 16px;
     color: var(--light);
     border-radius: 20px;
     font-weight: 700;
 }
-#content main .table-data .order table tr td .status.completed {
+#content main .table-data .laporan-home table tr td .status.piket {
     background: var(--blue);
 }
-#content main .table-data .order table tr td .status.process {
-    background: var(--yellow);
-}
-#content main .table-data .order table tr td .status.pending {
+
+#content main .table-data .laporan-home table tr td .status.tidak.piket {
     background: var(--orange);
 }
 
-#content main .table-data .todo {
+/* table leaderboard */
+#content main .table-data .leaderboard-home {
     flex-grow: 1;
     flex-basis: 300px;
     margin-bottom: 50px;
 }
-#content main .table-data .todo .todo-list {
+#content main .table-data .leaderboard-home .leaderboard-list {
     width: 100%;
 }
-#content main .table-data .todo .todo-list li {
+#content main .table-data .leaderboard-home .leaderboard-list li {
     width: 100%;
     margin-bottom: 16px;
     border: 0.1px solid rgb(52, 46, 55, 10%);
@@ -709,7 +573,7 @@ body {
     align-items: center;
 }
 
-#content main .table-data .todo .todo-list li:hover {
+#content main .table-data .leaderboard-home .leaderboard-list li:hover {
     width: 100%;
     margin-bottom: 16px;
     background: var(--grey);
@@ -720,43 +584,30 @@ body {
     align-items: center;
 }
 
-#content main .table-data .todo .todo-list li.juara1 i img {
+/* list isi tabel leaderboard */
+#content main .table-data .leaderboard-home .leaderboard-list li.juara2 i img,
+#content main .table-data .leaderboard-home .leaderboard-list li.juara3 i img,
+#content main .table-data .leaderboard-home .leaderboard-list li.juara1 i img {
     width: 45px;
     height: 45px;
 }
 
-#content main .table-data .todo .todo-list li.juara2 i img {
-    width: 45px;
-    height: 45px;
-}
-
-#content main .table-data .todo .todo-list li.juara3 i img {
-    width: 45px;
-    height: 45px;
-}
-
-#content main .table-data .todo .todo-list li.juara1 {
+/* warna tiap list leaderboard */
+#content main .table-data .leaderboard-home .leaderboard-list li.juara1 {
     border-left: 10px solid #e7eb00;
 }
-#content main .table-data .todo .todo-list li.juara2 {
+#content main .table-data .leaderboard-home .leaderboard-list li.juara2 {
     border-left: 10px solid #afafaf;
 }
-#content main .table-data .todo .todo-list li.juara3 {
+#content main .table-data .leaderboard-home .leaderboard-list li.juara3 {
     border-left: 10px solid #bb8000;
 }
 
-#content main .table-data .todo .todo-list li.juara {
-    border-left: 10px solid #3c91e6;
+/* icon per judul menu */
+#content main .head img {
+    width: 70px;
+    height: 70px;
 }
-
-#content main .table-data .todo .todo-list li.completed {
-    background: var(--blue);
-}
-#content main .table-data .todo .todo-list li:last-child {
-    margin-bottom: 0;
-}
-/* MAIN */
-/* CONTENT */
 
 @media screen and (max-width: 768px) {
     #sidebar {
@@ -778,7 +629,6 @@ body {
 }
 
 @media screen and (max-width: 576px) {
-    #content nav form.show ~ .notification,
     #content nav form.show ~ .profile {
         display: none;
     }
@@ -790,13 +640,18 @@ body {
     #content main .table-data .head {
         min-width: 420px;
     }
-    #content main .table-data .order table {
+    #content main .table-data .laporan-home table {
         min-width: 420px;
     }
-    #content main .table-data .todo .todo-list {
+    #content main .table-data .leaderboard-home .leaderboard-list {
         min-width: 420px;
     }
     #sidebar .brand .text {
         font-size: 20px;
+    }
+
+    #content main .head img {
+        width: 50px;
+        height: 50px;
     }
 }

@@ -3,13 +3,8 @@
 @section('content')
     <!-- MAIN -->
     <main>
-        {{-- <div class="head-title">
-            <div class="left">
-                <h1>Over<em>view</em></h1>
-                </ul>
-            </div>
-        </div> --}}
 
+        {{-- 3 kotak diatas --}}
         <ul class="box-info">
             <li>
                 <i class='bx bxs-group'></i>
@@ -32,20 +27,18 @@
                     <p>500</p>
                 </span>
             </li>
-            {{-- <li>
-                <i class='bx bxs-calendar'></i>
-                <span class="text">
-                    <h3>Berikutnya</h3>
-                    <p>Senin, 22 April 2024</p>
-                </span>
-            </li> --}}
         </ul>
 
+        {{-- tabel-tabel --}}
         <div class="table-data">
-            <div class="order">
+
+            {{-- tabel laporan --}}
+            <div class="laporan-home">
+
+                {{-- header dan title tabel leaderboard --}}
                 <div class="head">
                     <h3>Laporan</h3>
-                    <a href="/laporan-guru" class="btn-download">
+                    <a href="/laporan-guru" class="btn-see-all">
                         <span class="text">See all</span>
                         <i class='bx bx-right-arrow-alt'></i>
                     </a>
@@ -59,6 +52,8 @@
                         </tr>
                     </thead>
                     <tbody>
+
+                        {{-- list laporan siswa dan pointnya --}}
                         <tr>
                             <td>
                                 <p>2373927734</p>
@@ -73,6 +68,8 @@
                                 </a>
                             </td>
                         </tr>
+
+                        {{-- list laporan siswa dan pointnya --}}
                         <tr>
                             <td>
                                 <p>2369430584</p>
@@ -134,39 +131,49 @@
                     </tbody>
                 </table>
             </div>
-            <div class="todo">
+
+            {{-- tabel leaderboard --}}
+            <div class="leaderboard-home">
+
+                {{-- header dan title tabel leaderboard --}}
                 <div class="head">
                     <h3>Leaderboard</h3>
-                    <a href="/leaderboard-guru" class="btn-download">
+                    <a href="/leaderboard-guru" class="btn-see-all">
                         <span class="text">See all</span>
                         <i class='bx bx-right-arrow-alt'></i>
                     </a>
                 </div>
-                <ul class="todo-list">
+                <ul class="leaderboard-list">
+
+                    {{-- list leaderboard kelas dan pointnya --}}
                     <li class="juara1">
                         <i>
                             <img src="assets/images/First.png" alt="">
                         </i>
                         <p>Kelas 7B</p>
-                        <a href="#" class="btn-download">
+                        <a class="btn-leaderboard">
                             <span class="text">500 point</span>
                         </a>
                     </li>
+
+                    {{-- list leaderboard kelas dan pointnya --}}
                     <li class="juara2">
                         <i>
                             <img src="assets/images/Second.png" alt="">
                         </i>
                         <p>Kelas 8B</p>
-                        <a href="#" class="btn-download">
+                        <a class="btn-leaderboard">
                             <span class="text">480 point</span>
                         </a>
                     </li>
+
+                    {{-- list leaderboard kelas dan pointnya --}}
                     <li class="juara3">
                         <i>
                             <img src="assets/images/Third.png" alt="">
                         </i>
                         <p>Kelas 9A</p>
-                        <a href="#" class="btn-download">
+                        <a class="btn-leaderboard">
                             <span class="text">460 point</span>
                         </a>
                     </li>

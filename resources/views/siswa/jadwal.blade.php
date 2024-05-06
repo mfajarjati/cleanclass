@@ -8,18 +8,18 @@
             <h3>Jadwal <em>Piket</em></h3>
             <img src="assets/images/award.png" alt="">
         </div>
-        <section class="pricing">
+        <section class="jadwal">
             <div class="container">
-                <div class="pricing-main">
+                <div class="jadwal-main">
                     <div class="row">
 
                         <!-- basic table start -->
-                        <div class="pricing-table style-1">
-                            <div class="pricing-table-header">
+                        <div class="jadwal-piket style-1">
+                            <div class="piket-table-header">
                                 <h3>Senin</h3>
                             </div>
-                            <div class="pricing-table-body">
-                                <ul class="monthly-features">
+                            <div class="piket-hari-siswa">
+                                <ul class="piket">
                                     {{-- nama yang piket senin --}}
                                     <li>Alambana Habibi</li>
                                     <li>Almira Mandasari</li>
@@ -32,12 +32,12 @@
                         <!-- basic table end -->
 
                         <!-- standard table start -->
-                        <div class="pricing-table style-2">
-                            <div class="pricing-table-header">
+                        <div class="jadwal-piket style-2">
+                            <div class="piket-table-header">
                                 <h3>Selasa</h3>
                             </div>
-                            <div class="pricing-table-body">
-                                <ul class="monthly-features">
+                            <div class="piket-hari-siswa">
+                                <ul class="piket">
                                     <li>Dalimin Wastuti</li>
                                     <li>Darsirah Saputra</li>
                                     <li>Dian Mandala</li>
@@ -49,12 +49,12 @@
                         <!-- standard table end -->
 
                         <!-- premium table start -->
-                        <div class="pricing-table style-3">
-                            <div class="pricing-table-header">
+                        <div class="jadwal-piket style-3">
+                            <div class="piket-table-header">
                                 <h3>Rabu</h3>
                             </div>
-                            <div class="pricing-table-body">
-                                <ul class="monthly-features">
+                            <div class="piket-hari-siswa">
+                                <ul class="piket">
                                     <li>Firda Rosela Sundari</li>
                                     <li>Gamanto Simanjuntak</li>
                                     <li>Humaira Waluyo</li>
@@ -66,12 +66,12 @@
                         <!-- premium table end -->
 
                         <!-- premium table start -->
-                        <div class="pricing-table style-4">
-                            <div class="pricing-table-header">
+                        <div class="jadwal-piket style-4">
+                            <div class="piket-table-header">
                                 <h3>Kamis</h3>
                             </div>
-                            <div class="pricing-table-body">
-                                <ul class="monthly-features">
+                            <div class="piket-hari-siswa">
+                                <ul class="piket">
                                     <li>Makuta Suryatmi</li>
                                     <li>Michelle Safitri</li>
                                     <li>Oliva Narpati</li>
@@ -83,12 +83,12 @@
                         <!-- premium table end -->
 
                         <!-- premium table start -->
-                        <div class="pricing-table style-5">
-                            <div class="pricing-table-header">
+                        <div class="jadwal-piket style-5">
+                            <div class="piket-table-header">
                                 <h3>Jum'at</h3>
                             </div>
-                            <div class="pricing-table-body">
-                                <ul class="monthly-features">
+                            <div class="piket-hari-siswa">
+                                <ul class="piket">
                                     <li>Qori Maheswara</li>
                                     <li>Raina Yuliarti</li>
                                     <li>Vanya Winarsih</li>

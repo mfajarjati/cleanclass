@@ -4,32 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- My CSS -->
-    <link rel="stylesheet" href="assets/css/template-home.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel= "stylesheet"
-        href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="assets/css/template-home.css">
     <link rel="stylesheet" href="assets/css/template-laporan.css">
     <link rel="stylesheet" href="assets/css/template-leaderboard.css">
     <link rel="stylesheet" href="assets/css/template-jadwal.css">
     <link rel="stylesheet" href="assets/css/template-event.css">
+
+    {{-- font --}}
     <link
         href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Righteous&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+
     <title>CleanClass</title>
     <link rel="icon" href="assets/images/icon.ico">
 </head>
 
 <!-- SIDEBAR -->
 <section id="sidebar">
-    <a href="#" class="brand">
+    <a class="brand">
         <img src="assets/images/started.png" alt="">
         <span class="text">CleanClass</span>
     </a>
@@ -95,10 +97,6 @@
                     </a>
                 </div>
             </div>
-            {{-- <div class="notification">
-                <i class='bx bxs-bell'></i>
-                <span class="num">7</span>
-            </div> --}}
         </nav>
         <!-- NAVBAR -->
 
@@ -108,7 +106,6 @@
 
     </section>
     <!-- CONTENT -->
-    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="assets/js/home.js"></script>
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -116,6 +113,7 @@
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 
 </html>
